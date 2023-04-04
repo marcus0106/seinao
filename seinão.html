@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="PT-BR">
 <head>
-    <title>Sei nao</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEI NAO</title>
 </head>
 
-<body>
+<body class="background">
     <section class="vh-100" style="background-color: #343A40;">
+        <div class="container py-5 h100"> 
         <div class="row d-flex justify-content-center aling-items-center h100"></div>
         <div class="col col-x1-10">
+        </div>
             <div class="card" style="border-radius: 1rem;">
                 <div class="row g-0">
-                    <div class="col-md-6 col-lg-5 align-items-center d-none d-md-block">
-                        <img src="img-login.jpg" alt="login form" class="img-fluid"
-                            style="border-radius: 1rem 0 0 1rem;">
+                    <div class="col-md-6 col-lg-5 align-items-center d-none d-md-block"> <!-- imagem de login-->
+                        <img src="img-login.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;">
+                    </div> 
                         <div class="col-md-6 col-lg-7 d-flex align-items-center">
                             <div class="card-body p-4 p-lg-5 text-black">
-                                <form action="autenticador.php" method="">
-                                    <!--  -->
-                                    <div>
+                                <form action="autenticador.php" method="post">
+                                    <div class="d-flex mb-3 pb-1">  <!-- fala sobre a logo-->
+                                        <i class="fas fa-clubes fa-2x me-3" style="color: #ff6219;"></i>
+                                    <span class="h1 fw-bold mb-0"> <!-- imagem da logo luck-->
+                                        <img src="logo.png" width="50%">
+                                    </span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form2Example17"></label>
+                                        <input type="tex" id="usuario" name="usuario" placeholder="email ou CPF" class="form-control form-control-lg" required>
+                                    </div>
 
                                 </form>
 
@@ -36,3 +46,4 @@
 </body>
 
 </html>
+
